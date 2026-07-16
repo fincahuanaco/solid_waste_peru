@@ -1,4 +1,4 @@
-# Analytical Study of Peruvian Solid Waste Registration (2014–2024)
+# Analytical Study of Peruvian Solid Waste (2014–2024)
 
 Welcome to the interactive data repository for the analysis of solid waste registration in Peru. This project evaluates a decade of waste management data to uncover regional trends, generation habits, and systemic challenges across municipal and non-municipal sectors.
 
