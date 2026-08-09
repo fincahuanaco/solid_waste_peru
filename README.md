@@ -2,16 +2,16 @@
 
 Welcome to the interactive data repository for the analysis of solid waste registration in Peru. This project evaluates a decade of waste management data to uncover regional trends, generation habits, and systemic challenges across municipal and non-municipal sectors.
 
-## 🗺️ Live Interactive Maps
+## Interactive Maps
 We have compiled our spatial analysis into two interactive, user-friendly maps. You can explore them directly in your browser:
 
-*   [**Portal Landing Page**](https://fincahuanaco.github.io/solid_waste_peru/) - Overview of the project and access to all visualizations.
+*   [**Portal Results Page**](https://fincahuanaco.github.io/solid_waste_peru/) - Overview of the project and access to all visualizations.
 
-## 📊 Key Focus Areas
+## Key Focus Areas
 *   **Decadal Progression:** Tracking the evolution of daily per capita generation (PCG) from 2014 to 2024.
 *   **Composition Breakdown:** Analyzing the proportions of organic, inorganic, unusable, and hazardous waste.
 *   **Infrastructure Coverage:** Correlating population density with formal waste disposal systems.
 
-## 🛠️ Data Sources & Technologies
-*   **Data Source:** Open-data repositories from the Peruvian Ministry of the Environment (MINAM / SIGERSOL).
+## Data Sources & Technologies
+*   **Data Source:** Open-data repositories from the Peruvian Ministry of the Environment (MINAM / SIGERSOL). https://www.datosabiertos.gob.pe/
 
