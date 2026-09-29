@@ -654,3 +654,13 @@ svg.leaflet-image-layer.leaflet-interactive path {
 		print-color-adjust: exact;
 		}
 	}
+	
+	
+	
+/* Hide any CARTO / tile attribution or watermark links inside Leaflet popups */
+.leaflet-popup-content a[href*="carto"],
+.leaflet-popup-content .leaflet-attribution,
+.leaflet-popup-content img[src*="carto"] {
+    display: none !important;
+}
+	

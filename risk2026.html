@@ -2089,11 +2089,12 @@ const map = L.map('map',{ zoomControl:false, preferCanvas:true, renderer:L.canva
 L.control.zoom({position:'bottomright'}).addTo(map);
 L.control.scale({imperial:false, position:'bottomright'}).addTo(map);
 
+var cartoapi="cb1_43ii_1_14ec1606e7984da8203d3588";
 // Dark basemap
-L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png',{
+L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png?key='+cartoapi,{
   attribution:'&copy; OpenStreetMap &copy; CARTO', subdomains:'abcd', maxZoom:19
 }).addTo(map);
-L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}{r}.png',{
+L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}{r}.png?key='+cartoapi,{
   pane:'shadowPane', subdomains:'abcd', maxZoom:19
 }).addTo(map);
 

@@ -508,15 +508,16 @@
             
 
         
-    
-            var tile_layer_7433964b0c532ed4cf22667960b338d4 = L.tileLayer(
-                "https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png",
+       var cartoapi="cb1_43ii_1_14ec1606e7984da8203d3588";
+       var tile_layer_7433964b0c532ed4cf22667960b338d4 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png?key="+cartoapi,
                 {
   "minZoom": 0,
   "maxZoom": 18,
   "maxNativeZoom": 18,
   "noWrap": false,
   "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors, \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+ // "attribution":"",
   "subdomains": "abc",
   "detectRetina": false,
   "tms": false,
@@ -2102,11 +2103,17 @@
     
             geo_json_8d9f18eeb99ebb6cf5e99fea34044f01.addTo(map_35001b3d36ee33c56c17f47ec9408793);
         
-    
+            var cartoapi="cb1_43ii_1_14ec1606e7984da8203d3588";
             var layer_control_9ca5f10ac527fcfcc180da4e66ea7d94_layers = {
-                base_layers : {
-                    "https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png" : tile_layer_7433964b0c532ed4cf22667960b338d4,
+                /*base_layers : {
+                    "https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png?key=cb1_43ii_1_14ec1606e7984da8203d3588" : tile_layer_7433964b0c532ed4cf22667960b338d4,
                 },
+                */
+                
+		base_layers : {
+			"https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png" : tile_layer_7433964b0c532ed4cf22667960b338d4,
+		    },
+				    
                 overlays :  {
                     "Departments" : geo_json_b4daecf15e0069d08d39b504b21a5558,
                     "Department Names" : feature_group_86958e7f703e1419bb60eb0f2776c473,
@@ -2147,6 +2154,9 @@
 }
             ).addTo(map_35001b3d36ee33c56c17f47ec9408793);
 
-        
+        map_35001b3d36ee33c56c17f47ec9408793.options.popupOptions = {
+    attribution: false
+};
+
 </script>
 </body></html>
